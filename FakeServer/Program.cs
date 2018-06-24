@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.PlatformAbstractions;
 using Serilog;
@@ -13,7 +14,7 @@ namespace FakeServer
     public class Program
     {
         public static Dictionary<string, string> MainConfiguration = new Dictionary<string, string>();
-
+        
         public static IConfiguration Configuration { get; set; }
 
         public static void Main(string[] args)
