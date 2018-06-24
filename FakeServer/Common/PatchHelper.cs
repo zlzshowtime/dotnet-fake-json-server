@@ -10,7 +10,7 @@ namespace FakeServer.Common
     //when applyPatch()
     public class PatchHelper()
     {
-
+        //File cleanup
         string file = null;
 
         static void addOP(string id, string value)
